@@ -108,8 +108,8 @@ export default function Page() {
     {
       title: "Free",
       credits: 10,
-      monthlyPrice: "0",  // INR
-      yearlyPrice: "0",
+      monthlyPrice: 0,  // INR
+      yearlyPrice: 0,
       description: "Get started with 10 free credits",
       features: [
         "Limited access to AI features",
@@ -147,22 +147,7 @@ export default function Page() {
       popular: true,
       actionRoute:"/",
     },
-    {
-      title: "Enterprise",
-      credits: "Custom",
-      monthlyPrice: "Custom",
-      yearlyPrice: "Custom",
-      description: "Dedicated support and infrastructure for enterprises",
-      features: [
-        "Unlimited AI access",
-        "Custom API limits",
-        "Dedicated support",
-        "Advanced analytics & insights",
-      ],
-      actionLabel: "Contact Sales",
-      exclusive: true,
-      actionRoute:"/",
-    },
+    
   ];
   
   
