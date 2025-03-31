@@ -11,11 +11,17 @@ export default function GhibliImageConverter() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   
-  const predefinedPrompt = 
-  `Convert this image into a Studio Ghibli-style artwork. 
-  Apply soft, hand-painted textures with warm pastel colors. 
-  Ensure a vibrant anime-like aesthetic with a cinematic, dreamy atmosphere. 
-  Retain fine details, expressive characters, and a lush natural background, resembling iconic Ghibli scenes.`;
+const predefinedPrompt = `
+  Take the given image and enhance it into a Studio Ghibli-style artwork while preserving its original details. 
+  - Apply a hand-painted look with soft brushstrokes and pastel colors.
+  - Keep the key objects and subject in the same position.
+  - Use warm lighting, gentle contrast, and detailed backgrounds.
+  - Do NOT generate a completely new scene. The image structure must remain the same.
+  - Ensure smooth textures and avoid rough or noisy results.
+  - Enhance facial expressions in a Ghibli style without distorting the features.
+  - Maintain high resolution and avoid pixelation.
+`;
+
 
   const handleImageSelect = (imageData: string) => {
     setImage(imageData || null);
