@@ -8,9 +8,9 @@ import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
 
 const features = [
-  { title: "AI Upscaling", href: "/upscaling" },
+  { title: "AI Upscaling", href: "/" },
   { title: "Text-to-Image", href: "/text-to-image" },
-  { title: "Image Enhancement", href: "/enhancement" },
+  { title: "Ghibli", href: "/ghibli" },
 ];
 
 export default function Navbar() {
