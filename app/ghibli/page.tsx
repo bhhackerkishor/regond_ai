@@ -106,7 +106,7 @@ export default function GhibliImageConverter() {
             </div>
           ) : (
             <>
-              <ImageResultDisplay imageUrl={generatedImage || ""} onReset={handleReset} />
+              <ImageResultDisplay imageUrl={generatedImage || ""} description="Studio Ghibli-style illustration"  onReset={handleReset} />
             </>
           )}
         </CardContent>
